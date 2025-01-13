@@ -8,4 +8,7 @@
     <string name="favorite">Favorite</string>
     <string name="title_favorite">Favorite News</string>
     <string name="title_favoritenews">Favorite News</string>
+    <string name="dark_mode_settings">Dark Mode Settings</string>
+    <string name="enable_dark_mode">Enable Dark Mode</string>
+    <string name="settings">Settings</string>
 </resources>

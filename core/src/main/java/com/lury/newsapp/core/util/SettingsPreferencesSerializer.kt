@@ -10,7 +10,6 @@ import java.io.InputStream
 import java.io.OutputStream
 import java.util.Base64
 
-
 object SettingsPreferencesSerializer : Serializer<DataPreferences> {
     override val defaultValue: DataPreferences
         get() = DataPreferences(isDark = false)

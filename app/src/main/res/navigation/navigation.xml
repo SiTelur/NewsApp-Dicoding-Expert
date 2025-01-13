@@ -22,6 +22,7 @@
             app:destination="@id/detailActivity" />
     </fragment>
 
+    <!--suppress NavigationFile -->
     <fragment
         app:moduleName="favoritenews"
         android:id="@+id/fragment_favorite"
@@ -30,4 +31,8 @@
             android:id="@+id/actionFavoriteToDetail"
             app:destination="@id/detailActivity" />
     </fragment>
+    <fragment
+        android:id="@+id/fragment_settings"
+        android:name="com.lury.newsapp.presentation.settings.SettingsFragment"
+        android:label="SettingsFragment" />
 </navigation>
