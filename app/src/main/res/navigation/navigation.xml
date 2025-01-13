@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_news">
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.lury.newsapp.presentation.detail.DetailActivity"
+        android:label="activity_detail"
+        tools:layout="@layout/activity_detail" >
+        <argument
+            android:name="News"
+            app:argType="com.lury.newsapp.presentation.model.NewsUi" />
+    </activity>
+    <fragment
+        android:id="@+id/fragment_news"
+        android:name="com.lury.newsapp.newslist.presentation.news_list.NewsListFragment"
+        android:label="NewsListFragment" >
+        <action
+            android:id="@+id/actionNewsToDetail"
+            app:destination="@id/detailActivity" />
+    </fragment>
+
+    <fragment
+        app:moduleName="favoritenews"
+        android:id="@+id/fragment_favorite"
+        android:name="com.lury.favoritenews.presentation.favorite.FavoriteFragment">
+        <action
+            android:id="@+id/actionFavoriteToDetail"
+            app:destination="@id/detailActivity" />
+    </fragment>
+</navigation>
