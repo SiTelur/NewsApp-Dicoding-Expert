@@ -1,5 +1,3 @@
-import java.util.Properties
-
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
@@ -18,10 +16,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
 
-       val properties = Properties()
-        properties.load(project.rootProject.file("local.properties").inputStream())
-
-        buildConfigField("String","API_KEY","\"${properties.getProperty("API_KEY")}\"")
+        buildConfigField("String","API_KEY","\"a1f80911ba914b0f8b9ee220667ad2d5\"")
 
     }
 
