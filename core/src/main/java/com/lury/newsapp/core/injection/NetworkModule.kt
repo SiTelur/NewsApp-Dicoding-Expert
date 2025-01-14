@@ -5,6 +5,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import okhttp3.CertificatePinner
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -19,12 +20,20 @@ class NetworkModule {
 
     @Provides
     @Singleton
-    fun provideClient() : OkHttpClient = OkHttpClient.Builder()
-        .addNetworkInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
-        .connectTimeout(120,TimeUnit.SECONDS)
-        .readTimeout(120, TimeUnit.SECONDS)
-        .build()
-
+    fun provideClient() : OkHttpClient {
+        val hostName : String = "newsapi.org"
+        val certificatePinner = CertificatePinner.Builder()
+            .add(hostName, "sha256/Q/Dhu9FBOaTRCRL38yOpIxCg3wvkc5pnQhC7NVqnZoo=")
+            .add(hostName, "sha256/kIdp6NNEd8wsugYyyIYFsi1ylMCED3hZbSR8ZFsa/A4=")
+            .add(hostName, "sha256/mEflZT5enoR1FuXLgYYGqnVEoZvmf9c2bVBpiOjYQ0c=")
+            .build()
+        return OkHttpClient.Builder()
+            .addNetworkInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
+            .connectTimeout(120, TimeUnit.SECONDS)
+            .readTimeout(120, TimeUnit.SECONDS)
+            .certificatePinner(certificatePinner)
+            .build()
+    }
     @Provides
     @Singleton
     fun provideService(client: OkHttpClient) : ApiService {

@@ -60,4 +60,5 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     ksp(libs.compiler)
     implementation(libs.androidx.navigation.dynamic.features.fragment)
+    debugImplementation(libs.leakcanary.android)
 }
