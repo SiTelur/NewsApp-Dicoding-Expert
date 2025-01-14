@@ -11,7 +11,7 @@ import com.lury.favoritenews.databinding.FragmentFavoriteBinding
 import com.lury.favoritenews.di.DaggerFavoriteComponent
 import com.lury.favoritenews.presentation.model.favoriteUiToNewsUi
 import com.lury.newsapp.di.FavoriteModuleDependency
-import com.lury.newsapp.presentation.news_list.component.NewsAdapter
+import com.lury.newsapp.presentation.listnews.component.NewsAdapter
 import com.lury.newsapp.presentation.model.NewsUi
 import dagger.hilt.android.EntryPointAccessors
 import javax.inject.Inject

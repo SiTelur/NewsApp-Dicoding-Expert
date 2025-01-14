@@ -14,7 +14,7 @@
     </activity>
     <fragment
         android:id="@+id/fragment_news"
-        android:name="com.lury.newsapp.presentation.news_list.NewsListFragment"
+        android:name="com.lury.newsapp.presentation.listnews.NewsListFragment"
         android:label="NewsListFragment" >
         <action
             android:id="@+id/actionNewsToDetail"

@@ -50,9 +50,9 @@ class DetailActivity : AppCompatActivity() {
 
         detailViewModel.isNewsFavorite(args.News).observe(this) { isFavorited ->
             if (isFavorited) {
-                binding.loveButton.setImageResource(R.drawable.ic_favorite_24) // Ganti dengan ikon yang terisi
+                binding.loveButton.setImageResource(R.drawable.ic_favorite_24)
             } else {
-                binding.loveButton.setImageResource(R.drawable.ic_favorite_border_24) // Ganti dengan ikon yang tidak terisi
+                binding.loveButton.setImageResource(R.drawable.ic_favorite_border_24)
             }
         }
 
