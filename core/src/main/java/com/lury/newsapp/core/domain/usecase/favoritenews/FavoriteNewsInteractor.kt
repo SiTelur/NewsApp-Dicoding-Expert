@@ -1,6 +1,5 @@
 package com.lury.newsapp.core.domain.usecase.favoritenews
 
-import com.lury.newsapp.core.data.repository.favoritenews.FavoriteNewsRepository
 import com.lury.newsapp.core.domain.model.favoritenews.FavoriteNews
 import com.lury.newsapp.core.domain.repository.favoritenews.IFavoriteNewsRepository
 import kotlinx.coroutines.flow.Flow

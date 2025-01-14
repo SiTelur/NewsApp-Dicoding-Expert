@@ -1,4 +1,4 @@
-package com.lury.newsapp.newslist.presentation.news_list
+package com.lury.newsapp.presentation.news_list
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,9 +10,8 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.lury.newsapp.core.data.model.response.Resource
 import com.lury.newsapp.databinding.FragmentNewsListBinding
-import com.lury.newsapp.newslist.presentation.news_list.component.NewsAdapter
+import com.lury.newsapp.presentation.news_list.component.NewsAdapter
 import com.lury.newsapp.presentation.model.NewsUi
-import com.lury.newsapp.presentation.news_list.NewsListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

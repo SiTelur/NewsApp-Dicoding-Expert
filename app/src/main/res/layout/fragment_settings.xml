@@ -7,7 +7,6 @@
 
     <!-- Title -->
     <TextView
-        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dark_mode_settings"
@@ -18,7 +17,6 @@
 
 
     <com.google.android.material.materialswitch.MaterialSwitch
-        android:id="@+id/switch_dark_mode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/enable_dark_mode"

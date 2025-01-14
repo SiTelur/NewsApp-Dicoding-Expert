@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.hilt)
     id("kotlin-parcelize")
     id("androidx.navigation.safeargs.kotlin")
+    alias(libs.plugins.detekt)
 
 }
 
@@ -56,6 +57,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
+    testImplementation(libs.junit.jupiter)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.hilt.android)
@@ -68,4 +70,5 @@ dependencies {
     ksp(libs.compiler)
     implementation(libs.androidx.navigation.dynamic.features.fragment)
     debugImplementation(libs.leakcanary.android)
+    testImplementation(libs.hilt.android.testing)
 }

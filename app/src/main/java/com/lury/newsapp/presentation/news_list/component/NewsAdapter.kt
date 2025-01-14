@@ -1,4 +1,4 @@
-package com.lury.newsapp.newslist.presentation.news_list.component
+package com.lury.newsapp.presentation.news_list.component
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -45,16 +45,4 @@ object DataMapper {
         )
     }
 
-    fun fromEntity(entity: NewsEntity) : News {
-        return News(
-            title = entity.title,
-            description = entity.description,
-            publishedAt = entity.publishedAt,
-            author = entity.author,
-            urlToImage = entity.urlToImage,
-            url = entity.url,
-            source = entity.source,
-            content = entity.content
-        )
-    }
 }

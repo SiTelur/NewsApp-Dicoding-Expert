@@ -2,7 +2,6 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation"
     app:startDestination="@id/fragment_news">
     <activity
         android:id="@+id/detailActivity"
@@ -15,7 +14,7 @@
     </activity>
     <fragment
         android:id="@+id/fragment_news"
-        android:name="com.lury.newsapp.newslist.presentation.news_list.NewsListFragment"
+        android:name="com.lury.newsapp.presentation.news_list.NewsListFragment"
         android:label="NewsListFragment" >
         <action
             android:id="@+id/actionNewsToDetail"

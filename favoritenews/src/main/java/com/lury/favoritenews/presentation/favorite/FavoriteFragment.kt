@@ -6,13 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.navigation.dynamicfeatures.fragment.ui.DefaultProgressFragment
 import androidx.navigation.fragment.findNavController
 import com.lury.favoritenews.databinding.FragmentFavoriteBinding
 import com.lury.favoritenews.di.DaggerFavoriteComponent
 import com.lury.favoritenews.presentation.model.favoriteUiToNewsUi
 import com.lury.newsapp.di.FavoriteModuleDependency
-import com.lury.newsapp.newslist.presentation.news_list.component.NewsAdapter
+import com.lury.newsapp.presentation.news_list.component.NewsAdapter
 import com.lury.newsapp.presentation.model.NewsUi
 import dagger.hilt.android.EntryPointAccessors
 import javax.inject.Inject

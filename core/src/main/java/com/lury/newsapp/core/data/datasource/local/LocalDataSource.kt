@@ -1,6 +1,5 @@
 package com.lury.newsapp.core.data.datasource.local
 
-import androidx.datastore.core.DataStore
 import com.lury.newsapp.core.data.datasource.local.database.entity.NewsEntity
 import com.lury.newsapp.core.data.datasource.local.database.room.NewsDao
 import com.lury.newsapp.core.data.datasource.local.preference.SettingsPreference
